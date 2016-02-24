@@ -95,6 +95,18 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/* FONTS */
+
+@font-face {
+  font-family: 'Sectra-SDI';
+  src: url("/fonts/GT-Sectra-Display-Super-Italic.eot");
+  src: url("fonts/gibson/237CD9_3_0.eot?#iefix") format('embedded-opentype'), url("/fonts/GT-Sectra-Display-Super-Italic.woff") format('woff'), url("/fonts/GT-Sectra-Display-Super-Italic.ttf") format('truetype');
+}
+@font-face {
+  font-family: 'Eesti-TT';
+  src: url("/fonts/GT-Eesti-Text-Thin.eot");
+  src: url("/includes/fonts/gibson/237CD9_1_0.eot?#iefix") format('embedded-opentype'), url("/fonts/GT-Eesti-Text-Thin.woff") format('woff'), url("/fonts/GT-Eesti-Text-Thin.ttf") format('truetype');
+}
 
 
 /* 
@@ -106,42 +118,144 @@ textarea {
 */
 
 h1, h2, h3, h4, h5, h6 {
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: .3em;
 }
 
 ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
 }
 
 h1 {
-  font-size: 3.6em;
+    font-family: "sectra-SDI";
+    font-size: 2.9em;
+    line-height: 1.3em;
+    color: white;
 }
+
+
 h2 {
-  font-size: 3em;
+    font-family: "eesti-TT";
+    font-size: 1.5em;
+}
+
+  p {
+      font-family: "eesti-TT";
+      font-size: 1.15em;
+      line-height: 1.6em;
+  }
+  
+small {
+      font-family: "eesti-TT";
+      font-size: 1.0em;
+      color: #999;
+}
+
+
+a, a:visited {
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover {
+
+    text-decoration: underline;
+}
+
+.white-link, .white-link:hover, .white-link:visited {
+    color: white;
+    text-decoration: underline;
+    }
+    
+.small-link, .small-link:visited {
+      color: #999;
+      text-decoration: underline;
+}
+    
+.small-link:hover {
+    color: black;
+        text-decoration: underline;
+        }
+
+.mb0 {
+    margin-bottom: 0;
+}
+.mb1{
+    margin-bottom: 0.1em;
+}
+.mt0 {
+    margin-top: 0;
+}
+.mt5{
+    margin-top:0.5em;
+}
+.white {
+    color: white;
 }
 
 .desktop-show {
-  display: none;
-}
-.desktop-hide {
-  display: block;
+    display: none;
 }
 
-.content-left {
-  background-image: url(http://static.tumblr.com/b76116263c254f3f5b5e2e47adad2813/izoanub/16gnl8niq/tumblr_static_3pfqppwludgkss8ss4sw0wg0g.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 30em;
+.desktop-hide {
+    display: block;
+}
+
+header {
+    background: pink;
+}
+
+.content-image {
+    background-image: url(/img/headshot.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 30em;
+    
+
 }
 
 .contact__item {
-  text-align: center;
-  width: 50%;
-  float: left;
+    text-align: center;
+    width: 50%;
+    float: left;
+    background: blue;
 }
 
+.clearfix {
+    overflow: hidden;
+}
+.container {
+    box-sizing: border-box;
+    padding: 30px 30px 30px 30px;
+}
+.work {
+    display: table;
+    width: 100%;
+}
+
+  .content-work__item {
+    box-sizing: border-box;
+    padding: 30px 30px;
+  }
+  .content-work__item--01 {
+    background: red;  
+  }
+  .content-work__item--02 {
+    background: yellow;
+  }
+  .content-work__item--03 {
+    background: green;  
+  }
+  
+  .bg-yellow {
+      background-color: yellow;
+  }
+  .about-text {
+      width: 100%;
+      max-width: 800px;
+  }
 
 
 /* 
@@ -154,10 +268,17 @@ h2 {
 @media only screen and (min-width: 768px) {
 
   h1 {
-    font-size: 8.2em;
+    font-size: 7.0em;
+    line-height: 1.4em;
   }
+  
   h2 {
-    font-size: 3.4em;
+    font-size: 2.4em;
+  }
+  
+  p {
+      font-size: 1.7em;
+      line-height: 1.5em;
   }
 
   .desktop-show {
@@ -166,35 +287,35 @@ h2 {
   .desktop-hide {
     display: none;
   }
-
-  .work {
-    display: table;
-    width: 100%;
-  }
-
-  .content-left {
-    display: table-cell;
-    vertical-align: top;
-    width: 50%;
-  }
-  .content-left__img {
-    width: 100%;
-  }
-
-  .content-right {
-    display: table-cell;
-    vertical-align: top;
-    width: 50%;
-  }
-  .content-right__item {
-    background: red;
-    border-bottom: .1em solid white;
+  
+  .content-work__item {
+    padding: 30px 50px;
   }
 
   .contact__item {
     width: 25%;
+    
+  }
+  .content-work {
+    display: table-cell;
+    vertical-align: top;
+    width: 50%;
+  }
+  .content-image {
+    display: table-cell;
+    vertical-align: top;
+    width: 50%;
+    padding-left: 100px;
+  }
+  .content-image__img {
+    width: 100%;
+  }
+  
+  .container {
+    padding: 30px 50px 50px 50px;
   }
 
+  
 }
 
 
