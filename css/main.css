@@ -204,7 +204,9 @@ a:hover {
 }
 
 header {
-    background: pink;
+    background-image: url(/img/_.gif);
+    background-color: black;
+    background-repeat: repeat;
 }
 
 .content-image {
@@ -212,8 +214,6 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 30em;
-    
-
 }
 
 .contact__item {
@@ -240,13 +240,22 @@ header {
     padding: 30px 30px;
   }
   .content-work__item--01 {
-    background: red;  
+    background-color: #2f167c;
+    background-repeat: repeat;
   }
   .content-work__item--02 {
-    background: yellow;
+    background-image: url(/img/bg_photo.jpg);
+    background-repeat: repeat-x; 
   }
   .content-work__item--03 {
-    background: green;  
+    background-image: url(/img/bg_tropical.gif);
+    background-color: black;
+    background-repeat: repeat;
+  }
+  
+  .tint {
+      background-color: rgba(0,0,0,.5);
+      padding: 15px;
   }
   
   .bg-yellow {
