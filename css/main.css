@@ -121,152 +121,153 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: .3em;
 }
-
 ul {
     margin: 0;
     padding: 0;
     list-style-type: none;
-}
-
+    }
 h1 {
     font-family: "sectra-SDI";
-    font-size: 2.9em;
+    font-size: 3.38em;
     line-height: 1.3em;
-    color: white;
-}
-
-
+    color: #fbdcc7;
+    }
 h2 {
     font-family: "eesti-TT";
-    font-size: 1.5em;
-}
-
-  p {
-      font-family: "eesti-TT";
-      font-size: 1.15em;
-      line-height: 1.6em;
-  }
-  
-small {
-      font-family: "eesti-TT";
-      font-size: 1.0em;
-      color: #999;
-}
-
-
-a, a:visited {
-    color: blue;
-    text-decoration: none;
-}
-
-a:hover {
-
-    text-decoration: underline;
-}
-
-.white-link, .white-link:hover, .white-link:visited {
-    color: white;
-    text-decoration: underline;
+    font-size: 1.7em;
     }
-    
-.small-link, .small-link:visited {
-      color: #999;
-      text-decoration: underline;
-}
-    
-.small-link:hover {
-    color: black;
-        text-decoration: underline;
-        }
-
-.mb0 {
-    margin-bottom: 0;
-}
-.mb1{
-    margin-bottom: 0.1em;
-}
-.mt0 {
-    margin-top: 0;
-}
-.mt5{
-    margin-top:0.5em;
-}
-.white {
-    color: white;
-}
-
-.desktop-show {
-    display: none;
-}
-
-.desktop-hide {
-    display: block;
-}
-
+p {
+    font-family: "eesti-TT";
+    font-size: 1.15em;
+    line-height: 1.6em;
+    }  
+small {
+    font-family: "eesti-TT";
+    font-size: 1.0em;
+    color: #999;
+    }
 header {
-    background-image: url(/img/_.gif);
-    background-color: black;
+    background-color: #2f167c;
     background-repeat: repeat;
-}
-
+    }
+.about-text {
+    width: 100%;
+    max-width: 800px;
+    } 
 .content-image {
     background-image: url(/img/headshot.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 30em;
-}
-
+    }
 .contact__item {
     text-align: center;
     width: 50%;
     float: left;
     background: blue;
-}
-
+    }
 .clearfix {
     overflow: hidden;
-}
+    }
 .container {
     box-sizing: border-box;
     padding: 30px 30px 30px 30px;
-}
+    }
 .work {
     display: table;
     width: 100%;
-}
-
-  .content-work__item {
+    }
+.content-work__item {
     box-sizing: border-box;
     padding: 30px 30px;
   }
-  .content-work__item--01 {
+.content-work__item--01 {
+    background-image: url(/img/bg_marble.jpg);
     background-color: #2f167c;
     background-repeat: repeat;
   }
-  .content-work__item--02 {
+.content-work__item--02 {
     background-image: url(/img/bg_photo.jpg);
     background-repeat: repeat-x; 
   }
-  .content-work__item--03 {
+.content-work__item--03 {
     background-image: url(/img/bg_tropical.gif);
     background-color: black;
     background-repeat: repeat;
   }
-  
-  .tint {
-      background-color: rgba(0,0,0,.5);
-      padding: 15px;
-  }
-  
-  .bg-yellow {
-      background-color: yellow;
-  }
-  .about-text {
-      width: 100%;
-      max-width: 800px;
-  }
+.desktop-show {
+    display: none;
+    }
+.desktop-hide {
+    display: block;
+    }
 
+/* links */
 
+a, a:visited {
+    color: #2c00b2;
+    text-decoration: none;
+    }
+a:hover {
+    text-decoration: underline;
+    }
+.blue-link, .blue-link:visited {
+    color: #47eaed;
+    text-decoration: underline;
+    }       
+.lime-link, .lime-link:visited {
+    color: #f0ff49;
+    text-decoration: underline;
+    }    
+.peach-link, .peach-link:visited {
+    color: #ffcfae;
+    text-decoration: underline;
+    }  
+.blue-link:hover, .lime-link:hover, .peach-link:hover{
+    color: white;
+}  
+.small-link, .small-link:visited {
+      color: #999;
+      text-decoration: underline;
+    }    
+.small-link:hover {
+    color: black;
+    text-decoration: underline;
+    }
+        
+/* spacing */
+
+.mb0 {
+    margin-bottom: 0;
+    }
+.mb1{
+    margin-bottom: 0.1em;
+    }
+.mt0 {
+    margin-top: 0;
+    }
+.mt5{
+    margin-top:0.5em;
+    }
+
+/* palette */
+
+.white {
+    color: white;
+    }
+.blue {
+    color: #3c00a1
+    }    
+.peach {
+    color: #ffcfae;
+    }
+.lime {
+    color: #d3fe77;
+    }
+.bg-peach {
+      background-color: #ffe9d8;
+    } 
+    
 /* 
 ********************
 *
